@@ -2,7 +2,7 @@ require 'calculator'
 
 describe Calculator do
 
-  subject(:calc) { described_class.new() }
+  subject(:calc) { described_class.new() } # explicit subject
 
   context '#sum' do
     it 'with positive numbers' do
@@ -15,7 +15,7 @@ describe Calculator do
       expect(result).to eq -12
     end
 
-    xit 'with positive and negative numbers' do
+    it 'with positive and negative numbers' do
       result = calc.sum(-5, 7)
       expect(result).to eq 2
     end
