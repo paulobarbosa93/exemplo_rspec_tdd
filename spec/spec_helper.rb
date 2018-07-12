@@ -13,7 +13,14 @@
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+
+require_relative '../helpers/fruit_helper'
+
 RSpec.configure do |config|
+
+  # Helper methods
+  config.include FruitHelper
+
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.

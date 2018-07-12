@@ -1,9 +1,9 @@
 describe 'Ruby on Rails' do
   it { is_expected.to start_with('Ruby').and end_with('Rails') }
 
-  it { expect(fruta).to eq('banana').or eq('uva').or eq('laranja') }
+  it { expect(fruit).to eq('banana').or eq('grape').or eq('orange') }
 
-  def fruta
-    %w(banana uva laranja).sample
-  end
+  # def fruit helper method (arbitrary)
+  #   %w(banana grape orange).sample
+  # end
 end
