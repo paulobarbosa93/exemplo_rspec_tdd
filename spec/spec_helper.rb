@@ -18,6 +18,22 @@ require_relative '../helpers/fruit_helper'
 
 RSpec.configure do |config|
 
+  # config.before(:suite) do
+  #   puts ">>>>>>>>> Antes de toda suíte de testes."
+  # end
+  #
+  # config.after(:suite) do
+  #   puts ">>>>>>>>> Depois de toda suíte de testes."
+  # end
+  #
+  # config.before(:all) do # :all or :context
+  #   puts ">>>>>>>>> Antes de TODOS os testes."
+  # end
+  #
+  # config.after(:all) do # :all or :context
+  #   puts ">>>>>>>>> Depois de TODOS os testes."
+  # end
+
   # Helper methods
   config.include FruitHelper
 
