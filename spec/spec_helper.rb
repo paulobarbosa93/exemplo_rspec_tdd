@@ -34,6 +34,10 @@ RSpec.configure do |config|
   #   puts ">>>>>>>>> Depois de TODOS os testes."
   # end
 
+  config.define_derived_metadata do |meta|
+    meta[:aggregate_failures] = true
+  end
+
   # Helper methods
   config.include FruitHelper
 
